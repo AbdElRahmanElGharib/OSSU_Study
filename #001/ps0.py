@@ -11,7 +11,6 @@ while True:
         break
     except:
         print('---Enter a valid NUMBER---')
-    pass
 
 
 result_1 = n**x
@@ -21,4 +20,4 @@ print('n**x =',result_1)
 print('log2 of n =',result_2)
 
 print('/n Press any key to exit')
-k = readchar.readchar()
+readchar.readchar()
