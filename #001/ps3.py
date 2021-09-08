@@ -449,5 +449,13 @@ def play_game(word_list):
 # when the program is run directly, instead of through an import statement
 #
 if __name__ == '__main__':
-    word_list = load_words()
-    play_game(word_list)
+    
+    while True:
+        
+        word_list = load_words()
+        play_game(word_list)
+        k = input('Enter \"Y\" or \"y\" then press Enter to play another round:\n')
+        if k not in 'yY' or len(k) != 1:
+            print('\n\nBye Bye')
+            break
+        print(30 * '_','\n')
